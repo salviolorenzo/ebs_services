@@ -1,60 +1,68 @@
 import React from 'react';
+import ReactContactForm from 'react-mail-form';
 
 export default function Footer(props) {
   return (
     <footer>
       <h2 id="contact">Get in touch</h2>
-      <form action="#">
-        <input type="text" name="name" placeholder="Name" data-aos="zoom-in" />
-        <input
-          type="text"
-          name="phone"
-          placeholder="Phone Number"
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        />
-        <input
-          type="text"
-          name="email"
-          placeholder="Email Address"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        />
-        <input
-          type="textarea"
-          name="message"
-          placeholder="Message"
-          data-aos="zoom-in"
-          data-aos-delay="300"
-        />
-        <input
-          id="submit"
-          type="submit"
-          name="submit"
-          placeholder="Submit"
-          data-aos="zoom-in"
-          data-aos-delay="400"
-        />
-      </form>
+      <ReactContactForm to="salviolorenzo@gmail.com">
+        <form>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            data-aos="zoom-in"
+          />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Phone Number"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Email Address"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          />
+          <input
+            type="textarea"
+            name="message"
+            placeholder="Message"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          />
+          <input
+            id="submit"
+            type="submit"
+            name="submit"
+            placeholder="Submit"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          />
+        </form>
+      </ReactContactForm>
       <ul>
         <li>
           <a href="tel:949-285-9600">
-            <i class="fas fa-phone-square" />
+            <i className="fas fa-phone-square" />
           </a>
         </li>
         <li>
           <a href="mailto:ericsalvio@aol.com">
-            <i class="fas fa-at" />
+            <i className="fas fa-at" />
           </a>
         </li>
         <li>
           <a>
-            <i class="fas fa-fax" />
+            <i className="fas fa-fax" />
           </a>
         </li>
         <li>
           <a>
-            <i class="fas fa-envelope" />
+            <i className="fas fa-envelope" />
           </a>
         </li>
       </ul>
@@ -64,7 +72,7 @@ export default function Footer(props) {
           BrokerCheck
         </a>
       </p>
-      <section class="disclosures">
+      <section className="disclosures">
         <p>
           Securities offered through Parkland Securities, LLC, member FINRA
           (FINRA.org)and SIPC (SIPC.org). Investment Advisory services offered
